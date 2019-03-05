@@ -35,7 +35,6 @@ class GoalPrompts
             puts "As you do not want to set a goal; Exiting program"
             exit
         end
-        choose_goal
     end
 
     # new_goal
@@ -45,7 +44,6 @@ class GoalPrompts
         #prompt goal setting
         puts "What goal would you like to set today?" 
         @goal = gets.chomp
-        choose_action
     end 
     #To do: give options to goals as exercise more, read more, eat healthier
 
@@ -57,7 +55,6 @@ class GoalPrompts
         #prompt action setting
         puts "what action would you like to do to work towards your goal?"
         @action = gets.chomp 
-        set_times
     end 
     ##To do:give options to actions as swimming, jogging,  gym
 
@@ -65,10 +62,9 @@ class GoalPrompts
     #choose_action
 
     #create a method called set_times
-    def set_times
+    def set_time
         puts "how many times a week would you like to go #{@action}"
         @times_of_week = gets.chomp
-        set_durations
     end 
 
     #Testing method
@@ -76,10 +72,9 @@ class GoalPrompts
 
 
     #create a method called set_duration
-    def set_durations
+    def set_duration
         puts "how long would you like to carry on your #{@action} each time(minutes)?"
         @duration_of_action = gets.chomp
-        set_report_frequency
     end
     ##To do: add condition to enter in minutes
 
