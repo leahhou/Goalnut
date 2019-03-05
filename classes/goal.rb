@@ -1,8 +1,8 @@
-
+require_relative 'goal_prompts'
 
 class Goal
     attr_reader :goal, :action, :time_frame, :report_frequency
-    
+
     def initialize(goal, action, time_frame, report_frequency)
         @goal = goal
         @action = action
