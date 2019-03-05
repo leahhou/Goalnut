@@ -7,7 +7,6 @@ require_relative 'valid_input'
 #
 class GoalPrompts
     
-    vi_ref = ValidInput.new
 
     def initialize
         @goal = ""
@@ -15,6 +14,7 @@ class GoalPrompts
         @times_of_week = ""
         @duration_of_action = ""
         @report_frequency = ""
+        @vi_ref = ValidInput.new
     end
 
     # create a method called new_goal
@@ -23,12 +23,12 @@ class GoalPrompts
     # to see if they would like to continue the program
     #
     def new_goal
-        input = nil
-        until vi_ref.is_valid_text?(input)
+        input = ""
+        until @vi_ref.is_valid_text?(input, ["yes", "no"])
             puts "Hi, would you like to create a new goal? [yes/no]" 
             input = gets.chomp 
         end
-        unless vi_ref.is_yes?(input)
+        unless @vi_ref.is_yes?(input)
             puts "As you do not want to set a goal; Exiting program"
             exit
         end
@@ -58,12 +58,9 @@ class GoalPrompts
     # stores input
     #
     def set_times
-        input = nil
-        until vi_ref.is_num_pos?(input)
         puts "How many times a week would you like to go #{@action}"
         input = gets.chomp
-        end
-        @times_of_week = input
+        @vi_ref.is_num_pos?(input) ? @times_of_week = input : set_times
     end 
 
     # Create a method called set_duration
@@ -72,12 +69,9 @@ class GoalPrompts
     # stores input
     #
     def set_duration
-        input = nil
-        until vi_ref.is_num_pos?(input)
         puts "How long would you like to carry on your #{@action} each time(minutes)?"
         input = gets.chomp
-        end
-        @duration_of_action = input
+        @vi_ref.is_num_pos?(input) ? @duration_of_action = input : set_duration
     end
 
     # create a method called set_report_frequency
@@ -87,12 +81,9 @@ class GoalPrompts
     # stores input
     #
     def set_report_frequency
-        input = nil
-        until vi_ref.is_num_pos?(input)
-            puts "How often would you like to record your progress per week?"
-            input = gets.chomp 
-        end
-        @report_frequency = input
+        puts "How often would you like to record your progress per week?"
+        input = gets.chomp 
+        @vi_ref.is_num_pos?(input) ? @report_frequency = input : set_report_frequency
     end 
 
 end 

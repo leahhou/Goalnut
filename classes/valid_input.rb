@@ -1,5 +1,5 @@
 #class that checks to see if user input is expected.
-class valid_input
+class ValidInput
 
     # takes 2 integers and 1 input
     # checks to see if input is a numeric
@@ -7,7 +7,7 @@ class valid_input
     # returns boolean
     #
     def is_num_range?(input, bot, top)
-        input.numeric? && input >= bot && input <= top ? true : false
+        is_number?(input) && input.to_i >= bot && input.to_i <= top ? true : false
     end
 
     # takes 2 arguments string and array
@@ -28,7 +28,7 @@ class valid_input
     # returns boolean
     #
     def is_num_pos?(input)
-        input.numeric? && input > -1 ? true : false
+        is_number?(input) && input.to_i > -1 ? true : false
     end
 
     # takes 1 argument
@@ -39,4 +39,8 @@ class valid_input
     def is_yes?(input)
         input.downcase == "yes" ? true : false
     end 
+
+    def is_number?(input)
+        true if Float(input) rescue false
+    end
 end
