@@ -18,11 +18,13 @@ class GoalPrompts
         var.numeric?
     end
 
-    @goal = ""
-    @action = ""
-    @times_of_week = ""
-    @duration_of_action = ""
-    @report_frequency = ""
+    def initialize
+        @goal = ""
+        @action = ""
+        @times_of_week = ""
+        @duration_of_action = ""
+        @report_frequency = ""
+    end
 
 
     #create a method called new_goal
