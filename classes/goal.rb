@@ -15,14 +15,32 @@ class Goal
         @reports = []
     end
 
-    #What did you achieve in the this reportable period?
+    # Prompts user for input and appends the results to an arr
     ##Loop until all reports submitted
     def gather_reports
         i = @report_frequency.to_i
         while i > 0
-        puts "How long did you #{@action} for in your first entry: "
+        puts "How long did you #{@action} for in your this entry: [If you did not run enter 0] "
         @reports << gets.chomp
         i -=1 
         end
+        p @reports
     end
+
+    #
+    def calc_result_perc
+
+    end
+
+    #
+    def calc_result_offset
+
+    end
+
+    #
+    def print_results
+
+    end
+
+    
 end
