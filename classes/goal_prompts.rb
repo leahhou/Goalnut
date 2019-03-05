@@ -4,9 +4,6 @@
 ### Returns true if equal to "yes" otherwise returns false
 class GoalPrompts
     
-
-
-
     def is_yes?(str)
         if str.downcase == "yes"
             return true
@@ -38,51 +35,56 @@ class GoalPrompts
             puts "As you do not want to set a goal; Exiting program"
             exit
         end
+        choose_goal
     end
 
-    new_goal
+    # new_goal
 
     #create a method called choose_goal
     def choose_goal
         #prompt goal setting
         puts "What goal would you like to set today?" 
         @goal = gets.chomp
+        choose_action
     end 
     #To do: give options to goals as exercise more, read more, eat healthier
 
     #testing me
-    choose_goal
+    #choose_goal
 
     #create a method called choose_action
     def choose_action
         #prompt action setting
         puts "what action would you like to do to work towards your goal?"
         @action = gets.chomp 
+        set_times
     end 
     ##To do:give options to actions as swimming, jogging,  gym
 
     #testing method
-    choose_action
+    #choose_action
 
     #create a method called set_times
     def set_times
         puts "how many times a week would you like to go #{@action}"
         @times_of_week = gets.chomp
+        set_durations
     end 
 
     #Testing method
-    set_times
+    #set_times
 
 
     #create a method called set_duration
     def set_durations
         puts "how long would you like to carry on your #{@action} each time(minutes)?"
         @duration_of_action = gets.chomp
+        set_report_frequency
     end
     ##To do: add condition to enter in minutes
 
     #testing method
-    set_durations
+    #set_durations
 
 
 
@@ -95,6 +97,6 @@ class GoalPrompts
     end 
 
     #testing method
-    set_report_frequency
+    #set_report_frequency
 
 end 

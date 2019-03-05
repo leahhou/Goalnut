@@ -1,12 +1,12 @@
-#require_relative 'goal_prompts'
+require_relative 'goal_prompts'
 
 class Goal
     attr_reader :goal, :action, :time_frame, :report_frequency
-    gp = GoalPrompts.new
+    gp_ref = GoalPrompts.new
     def initialize()
-        @goal = gp.choose_goal
-        @action = gp.choose_action
-        @time_frame = gp.set_times
+        @goal = gp_ref.choose_goal
+        @action = gp_ref.choose_action
+        @time_frame = 7
         @report_frequency = report_frequency#TODO change to method name from goal prompts
         @reports = []
     end
@@ -19,4 +19,9 @@ class Goal
         @reports << gets.chomp
         end
     end
+    
+    def compare_reports
+
+    end
+    gp_ref.new_goal
 end
