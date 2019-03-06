@@ -206,6 +206,16 @@ Throughout the development process communication was cruicial, especially when d
 ![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Slack%20Use%201.png?raw=true)
 ![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Slack%20Use%202.png?raw=true)
 
+#### Flowchart
+
+* As development progressed and we had to alter our plan, we also updated the flowchart. 
+* Below you can find the iterations of the flowchart in order.
+
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Flowchart%20iteration%201.png?raw=true)
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Flowchart%20iteration%202.png?raw=true)
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Flowchart%20iteration%203.png?raw=true
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Flowchart%20iteration%204.png?raw=true)
+
 #### Commenting
 
 * To keep the code clean and readable we have created blocks of comments above each method relevent to the method and its contents.
