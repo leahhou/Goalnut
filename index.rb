@@ -24,8 +24,10 @@ g.calc_result_duration_average
 
 #ref for reward class
 #
+
 r = Reward.new
-# 
+
+# testing commented out unless needed.
 # p g.perc_duration_achieved
 # p g.perc_times_achieved
 
