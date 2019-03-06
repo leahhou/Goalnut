@@ -1,0 +1,50 @@
+﻿Pseudo code MVP
+
+
+SETUP STAGE
+
+
+1. Greet user and ask for if they would like to create a new goal
+
+
+      If they select yes continue - 
+* otherwise Exit program
+
+
+2. Ask what goal they are aiming for.
+  
+3. Ask what quantifiable action can they do to achieve this goal?
+
+
+4. What level would they like to achieve during this time? ( relating to the quantifiable action)
+
+
+
+
+
+
+REPORTING STAGE
+
+
+What did you achieve in the this reportable period?
+* Loop until all reports submitted
+
+
+RESULTS STAGE
+
+
+
+
+Calculate and print how often they achieved their goal (%)(time and action)
+
+
+Calculate and print the average of their actions
+
+
+Print if the user achieved their goals + ascii reward if they achieved their goal
+* otherwise print encouragement to do better next time.
+
+
+
+
+EXIT
