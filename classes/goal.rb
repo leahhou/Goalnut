@@ -49,7 +49,7 @@ class Goal
             end
         end 
         @perc_duration_achieved = (results_duration_achieved.length.to_f/@reports.length) * 100
-        puts "You set to #{@action} for #{@duration}mins each time, and  #{@perc_duration_achieved}% of time, you #{@action} for that long this week."
+        puts "You set to #{@action} for #{@duration}mins each time, and  #{@perc_duration_achieved}% of time you #{@action} for that long this week."
     end
     
     #create a method that show the percentage of meeting the times of actions user set within a week
