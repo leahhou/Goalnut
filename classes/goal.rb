@@ -14,8 +14,9 @@ class Goal
         @time_frame = 7
         @times = gp_ref.set_times
         @duration = gp_ref.set_duration
-        #@report_frequency = gp_ref.set_report_frequency
         @reports = []
+        @perc_duration_achieved = ""
+        @per_times_achieved = ""
      
     end
 
@@ -46,8 +47,9 @@ class Goal
             if item.to_i >= @duration.to_i
                 results_duration_achieved << item
             end
-        end    
-        puts "You set to #{@action} for #{@duration}mins each time, and  #{(results_duration_achieved.length.to_f/@reports.length) * 100}% of time, you #{@action} for that long this week."
+        end 
+        @perc_duration_achieved = results_duration_achieved.length.to_f/@reports.length) * 100
+        puts "You set to #{@action} for #{@duration}mins each time, and  #{@perc_duration_achieved}% of time, you #{@action} for that long this week."
     end
     
     #create a method that show the percentage of meeting the times of actions user set within a week
@@ -58,7 +60,8 @@ class Goal
                results_times_achieved << item
             end
         end
-        puts "You would like to #{@action} for #{@times} times this week, and you have achieved it #{(results_times_achieved.length.to_f/@times.to_f) * 100}% of the time this week!"
+        @per_times_achieved = results_times_achieved.length.to_f/@times.to_f) * 100
+        puts "You would like to #{@action} for #{@times} times this week, and you have achieved it #{@per_times_achieved}% of the time this week!"
     end
 
         
