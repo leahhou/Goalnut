@@ -1,5 +1,10 @@
 require_relative 'classes/goal'
 
+
+puts "+-+-+-+-+-+-+-+-+-+-+-+-+
+|WELCOME| |TO| |GOALNUT!|
++-+-+-+-+-+-+-+-+-+-+-+-+"
+
 g = Goal.new
 g.gather_reports
 g.print_results
