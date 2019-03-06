@@ -10,6 +10,11 @@ class ValidInput
         is_number?(input) && input.to_i >= bot && input.to_i <= top ? true : false
     end
 
+    def is_num_greater?(input, bot)
+        is_number?(input) && input.to_i > bot ? true : false
+    end
+
+
     # takes 2 arguments string and array
     # If input is equal to an element in the array of expected input, return true.
     # returns boolean
