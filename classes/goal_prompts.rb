@@ -1,3 +1,4 @@
+require 'colorize'
 require_relative 'valid_input'
 
 
@@ -15,6 +16,7 @@ class GoalPrompts
         @duration_of_action = ""
         # delete if no error: @report_frequency = ""
         @vi_ref = ValidInput.new
+        @key_text_color = :red
     end
 
     # create a method called new_goal
@@ -25,7 +27,7 @@ class GoalPrompts
     def new_goal
         input = ""
         until @vi_ref.is_valid_text?(input, ["yes", "no"])
-            puts "Hi, would you like to create a new goal? [yes/no]" 
+            puts "Hi, would you like to create a new goal?" +  "[yes/no]".colorize(@key_text_color)
             input = gets.chomp 
         end
         unless @vi_ref.is_yes?(input)
@@ -38,7 +40,7 @@ class GoalPrompts
     # prompt goal setting
     #
     def choose_goal
-        puts "What goal would you like to set today?" 
+        puts "What " + "goal".colorize(@key_text_color) + " would you like to set today?" 
         @goal = gets.chomp
     end 
     #To do: give options to goals as exercise more, read more, eat healthier
@@ -47,7 +49,7 @@ class GoalPrompts
     # prompt action setting
     #
     def choose_action
-        puts "What action would you like to do to work towards your goal?"
+        puts "What " + "action".colorize(@key_text_color) + " would you like to do to work towards your goal?"
         @action = gets.chomp 
     end 
     ##To do:give options to actions as swimming, jogging,  gym
@@ -58,9 +60,9 @@ class GoalPrompts
     # stores input
     #
     def set_times
-        puts "How many times a week would you like to go #{@action}"
+        puts "How many " + "times".colorize(@key_text_color) + " a week would you like to go #{@action}" + "[num > 0]".colorize(@key_text_color)
         input = gets.chomp
-        @vi_ref.is_num_pos?(input) ? @times_of_week = input : set_times
+        @vi_ref.is_num_greater?(input, 0) ? @times_of_week = input : set_times
     end 
 
     # Create a method called set_duration
@@ -69,9 +71,9 @@ class GoalPrompts
     # stores input
     #
     def set_duration
-        puts "How long would you like to carry on your #{@action} each time(minutes)?"
+        puts "How " + "long".colorize(@key_text_color) + " would you like to carry on your #{@action.colorize(@key_text_color)} each?" + "[time in minutes num > 0]".colorize(@key_text_color)
         input = gets.chomp
-        @vi_ref.is_num_pos?(input) ? @duration_of_action = input : set_duration
+        @vi_ref.is_num_greater?(input, 0) ? @duration_of_action = input : set_duration
     end
 
     # delete if no error: create a method called set_report_frequency

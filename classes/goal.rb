@@ -1,10 +1,12 @@
 require_relative 'goal_prompts'
+require_relative 'valid_input'
 
 #A Goal class is created to take input of goal_prompts as instance variable
 class Goal
-    attr_reader :goal, :action, :time_frame, :report_frequency
+    attr_reader :goal, :action, :time_frame
     
     def initialize()
+        @vi_ref = ValidInput.new
         gp_ref = GoalPrompts.new
         gp_ref.new_goal
         @goal = gp_ref.choose_goal
@@ -22,9 +24,10 @@ class Goal
     def gather_reports
         i = @times.to_i
         while i > 0
-        puts "How long did you #{@action} for in your this entry: [If you did not run enter 0] "
-        @reports << gets.chomp
-        i -=1 
+            puts "How long did you #{@action} for in your this entry: [If you did not #{@action} enter 0] "
+            input = gets.chomp
+            @reports << input if @vi_ref.is_num_pos?(input)
+            i -=1 
         end
         p @reports
     end
