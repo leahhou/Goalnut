@@ -27,6 +27,10 @@ class ValidInput
         result
     end
 
+    def empty?(input)
+        input == "" ? true : false
+    end
+
     # takes 1 argument 
     # checks to see if it is a numeric
     # checks to see if input is greater than -1

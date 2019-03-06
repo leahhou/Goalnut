@@ -40,19 +40,19 @@ class GoalPrompts
     # prompt goal setting
     #
     def choose_goal
-        puts "What " + "goal".colorize(@key_text_color) + " would you like to set today?" 
-        @goal = gets.chomp
+        puts "What " + "goal".colorize(@key_text_color) + " would you like to set today?"
+        input = gets.chomp 
+        @vi_ref.empty?(input) ? choose_goal : @goal = input
     end 
-    #To do: give options to goals as exercise more, read more, eat healthier
 
     # create a method called choose_action
     # prompt action setting
     #
     def choose_action
         puts "What " + "action".colorize(@key_text_color) + " would you like to do to work towards your goal?"
-        @action = gets.chomp 
+        input = gets.chomp 
+        @vi_ref.empty?(input) ? choose_action : @action = input
     end 
-    ##To do:give options to actions as swimming, jogging,  gym
 
     # create a method called set_times
     # Gather input
@@ -75,17 +75,5 @@ class GoalPrompts
         input = gets.chomp
         @vi_ref.is_num_greater?(input, 0) ? @duration_of_action = input : set_duration
     end
-
-    # delete if no error: create a method called set_report_frequency
-    # This will be the number of times the user has to report durring the goal period.
-    # Gather input
-    # tests input: is numeric and greater than -1
-    # stores input
-    #
-    # def set_report_frequency
-    #     puts "How often would you like to record your progress per week?"
-    #     input = gets.chomp 
-    #     @vi_ref.is_num_pos?(input) ? @report_frequency = input : set_report_frequency
-    # end 
 
 end 
