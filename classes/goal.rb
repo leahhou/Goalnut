@@ -12,7 +12,7 @@ class Goal
         @time_frame = 7
         @times = gp_ref.set_times
         @duration = gp_ref.set_duration
-        @report_frequency = gp_ref.set_report_frequency
+        #@report_frequency = gp_ref.set_report_frequency
         @reports = []
      
     end
@@ -20,7 +20,7 @@ class Goal
     # Prompts user for input and appends the results to an arr
     ##Loop until all reports submitted
     def gather_reports
-        i = @report_frequency.to_i
+        i = @times.to_i
         while i > 0
         puts "How long did you #{@action} for in your this entry: [If you did not run enter 0] "
         @reports << gets.chomp
@@ -30,6 +30,11 @@ class Goal
     end
 
  
+    #create a method to print user's input when reporting g
+    def print_results
+        puts @reports 
+    end
+    
     
     #create a method that show the percentage of achieving the duration of action user set within a week
     def calc_result_duration_perc
@@ -57,16 +62,9 @@ class Goal
 
     #create a method that show you the average of your actions
     def calc_result_duration_average
-        puts "Your average time of #{@action} is #{@reports.inject(0.0){ |sum, el| sum + el.to_f }.to_f / @reports.size}mins"
+        puts "Your average time of #{@action} is #{@reports.inject(0.0){ |sum, el| sum + el.to_f }.to_f / @reports.size} mins"
 
     end    
     
-    
-
-    #create a method to print user's input when reporting g
-    def print_results
-        puts @reports 
-    end
-
     
 end
