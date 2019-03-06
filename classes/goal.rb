@@ -60,7 +60,7 @@ class Goal
                results_times_achieved << item
             end
         end
-        @per_times_achieved = (results_times_achieved.length.to_f/@times.to_f) * 100
+        @perc_times_achieved = (results_times_achieved.length.to_f/@times.to_f) * 100
         puts "You would like to #{@action} for #{@times} times this week, and you have achieved it #{@per_times_achieved}% of the time this week!"
     end
 
