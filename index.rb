@@ -1,5 +1,6 @@
 require 'colorize'
 require_relative 'classes/goal'
+require_relative 'classes/reward'
 
 
 puts "
