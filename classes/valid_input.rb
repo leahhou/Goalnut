@@ -10,6 +10,10 @@ class ValidInput
         is_number?(input) && input.to_i >= bot && input.to_i <= top ? true : false
     end
 
+    # takes 2 arguments input and integer
+    # if input is greater than bot then return true.
+    # returns boolean
+    #
     def is_num_greater?(input, bot)
         is_number?(input) && input.to_i > bot ? true : false
     end
@@ -27,6 +31,10 @@ class ValidInput
         result
     end
 
+    # takes 1 argument 
+    # checks to see if it is empty
+    # returns boolean
+    #
     def empty?(input)
         input == "" ? true : false
     end
@@ -41,14 +49,17 @@ class ValidInput
     end
 
     # takes 1 argument
-    # chacks to see if input is equal to 'yes'
+    # checks to see if input is equal to 'yes'
     # returns boolean
-    # returns boolen
     #
     def is_yes?(input)
         input.downcase == "yes" ? true : false
     end 
 
+    # takes 1 argument
+    # checks to see if input is a number
+    # returns boolean
+    #
     def is_number?(input)
         true if Float(input) rescue false
     end
