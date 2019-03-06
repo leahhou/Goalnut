@@ -39,7 +39,7 @@ class GoalPrompts
     # prompt goal setting
     #
     def choose_goal
-        puts "What " + "goal".colorize(@key_text_color) + " would you like to set today?"
+        puts "What " + "goal".colorize(@key_text_color) + " would you like to set today? " 
         input = gets.chomp 
         @vi_ref.empty?(input) ? choose_goal : @goal = input
     end 
@@ -48,7 +48,7 @@ class GoalPrompts
     # prompt action setting
     #
     def choose_action
-        puts "What " + "action".colorize(@key_text_color) + " would you like to do to work towards your goal?"
+        puts "What " + "action".colorize(@key_text_color) + " would you like to do to work towards your goal? " 
         input = gets.chomp 
         @vi_ref.empty?(input) ? choose_action : @action = input
     end 

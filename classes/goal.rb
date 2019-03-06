@@ -49,7 +49,7 @@ class Goal
             end
         end 
         @perc_duration_achieved = (results_duration_achieved.length.to_f/@reports.length) * 100
-        puts "You set to #{@action} for #{@duration}mins each time, and  #{@perc_duration_achieved}% of time you #{@action} for that long this week."
+        puts "Your goal was to #{@action} for #{@duration} mins each time, and  #{@perc_duration_achieved}% of time you #{@action} for that long this week."
     end
     
     #create a method that show the percentage of meeting the times of actions user set within a week
@@ -61,14 +61,14 @@ class Goal
             end
         end
         @perc_times_achieved = (results_times_achieved.length.to_f/@times.to_f) * 100
-        puts "You set your goal to #{@action} for #{@times} times this week, and you actually #{@action} for #{results_times_achieved.length} times. You have achieved #{@perc_times_achieved}%  this week!"
+        puts "Your goal was to #{@action} #{@times} times, and you actually #{@action}  #{results_times_achieved.length} times this week. You have achieved #{@perc_times_achieved}% of your goal this week!"
     end
 
         
 
     #create a method that show you the average of your actions
     def calc_result_duration_average
-        puts "Your average time of #{@action} is #{@reports.inject(0.0){ |sum, el| sum + el.to_f }.to_f / @reports.size} mins"
+        puts "Your average time spent #{@action} was #{@reports.inject(0.0){ |sum, el| sum + el.to_f }.to_f / @reports.size} mins this week."
 
     end    
     
