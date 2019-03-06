@@ -80,10 +80,10 @@ class GoalPrompts
     # tests input: is numeric and greater than -1
     # stores input
     #
-    def set_report_frequency
-        puts "How often would you like to record your progress per week?"
-        input = gets.chomp 
-        @vi_ref.is_num_pos?(input) ? @report_frequency = input : set_report_frequency
-    end 
+    # def set_report_frequency
+    #     puts "How often would you like to record your progress per week?"
+    #     input = gets.chomp 
+    #     @vi_ref.is_num_pos?(input) ? @report_frequency = input : set_report_frequency
+    # end 
 
 end 
