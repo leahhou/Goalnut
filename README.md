@@ -40,6 +40,7 @@ Initially, we each wrote two ideas for an terminal application onto a page. Afte
 * Return the total time spent on transport for a period.
 * Return the total dollar amount the user spends per period.
 
+
 # Project Selection:
 
 After brainstorming general ideas, we then gave each idea a ranking of '1 - 4' with '1' being the idea we wished to work on the most.
@@ -63,6 +64,8 @@ After deciding to move forward with the goal application we then took the elemen
 * Ascii art for a reward.
 * email reminder for entering goals
 * track multiply goals at a time
+
+
 
 
 
