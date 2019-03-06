@@ -123,7 +123,9 @@ Outputting average and percentage of goal has been implemented.
 # Initial Brainstorming
 Initially, we each wrote two ideas for a terminal application onto a page. After stating our ideas, we went through the potential for each idea and the challenges we would face through their development.
 
-# IDEAS FOR APP:
+# ideation adddd
+
+# Ideations for app:
 #### IDEA ONE: PET MONITOR APP.
 
 * Track Food consumed.
@@ -166,6 +168,10 @@ The idea with the lowest score would be the project we chose to develop further.
 
 After deciding to move forward with the goal application we then took the elements we wished to implement and split them up into features that would be necessary for the minimum viable product( the 'MVP') and features that we considered extras(the 'sprinkles') and not needed for initial deployment.
 
+##### Trello Screenshot:
+
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Trello%202%20.png?raw=true)
+
 #### MVP Features:
 * User input
 * User Goals
@@ -186,12 +192,22 @@ After deciding to move forward with the goal application we then took the elemen
 After assigning each feature to either MVP or Sprinkles, we were able to prioritise features and elements for the devlopment process. This can be seen from the organisational structure of our feature and todo trello boards.
 By moving features between testing and developing cards, on trello, we were able to bring all elements together in an iterative process that allowed for review and adaption through all stages of the project.
 
-* TRELLO PICTURES
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Trello%201.png?raw=true)
 
-##### docs
-* 
-* 
-* 
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/User%20Story(Trello).png?raw=true)
+
+
+###Communication
+
+Throughout the development process communication was cruicial, especially when dealing with the editing of linked files and elements. Slack was used to make this process easier and streamline communication.
+
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Slack%20Use%201.png?raw=true)
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Slack%20Use%202.png?raw=true)
+
+##### Resources
+* colorize github - https://github.com/fazibear/colorize
+* Excel checklist: - https://github.com/leahhou/Goalnut/blob/master/docs/Criterias%20Reassignment.xlsx
+* Pseudo code - https://github.com/leahhou/Goalnut/blob/master/docs/Pseudo_code.txt
 
 
 
