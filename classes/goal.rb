@@ -34,35 +34,38 @@ class Goal
     #create a method that show the percentage of achieving the duration of action user set within a week
     def calc_result_duration_perc
         results_duration_achieved = []
-        @report.each do |item|
-            if item >= @duration_of_action
+        @reports.each do |item|
+            if item.to_i >= @duration.to_i
                 results_duration_achieved << item
             end
-        puts (results_achieved.length/@report.length) * 100 + "%"
+        end    
+        puts "You set to #{@action} for #{@duration}mins each time, and  #{(results_duration_achieved.length.to_f/@reports.length) * 100}% of time, you #{@action} for that long this week."
     end
     
     #create a method that show the percentage of meeting the times of actions user set within a week
     def calc_result_times_perc
         results_times_achieved = []
-        @report.each do |item|
-            if item > 0
+        @reports.each do |item|
+            if item.to_i > 0
                results_times_achieved << item
             end
-        puts (results_times_achieved.length/@times.length)*100 + "%"
+        end
+        puts "You would like to #{@action} for #{@times} times this week, and you have achieved it #{(results_times_achieved.length.to_f/@times.to_f) * 100}% of the time this week!"
     end
 
         
 
     #create a method that show you the average of your actions
     def calc_result_duration_average
-        @report.inject(0.0){ |sum, el| sum + el }.to_f / @report.size
+        puts "Your average time of #{@action} is #{@reports.inject(0.0){ |sum, el| sum + el.to_f }.to_f / @reports.size}mins"
+
     end    
     
     
 
-    #create a method to print user's input when reporting 
+    #create a method to print user's input when reporting g
     def print_results
-        puts @report 
+        puts @reports 
     end
 
     
