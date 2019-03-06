@@ -61,7 +61,7 @@ class Goal
             end
         end
         @perc_times_achieved = (results_times_achieved.length.to_f/@times.to_f) * 100
-        puts "You would like to #{@action} for #{@times} times this week, and you have achieved it #{@per_times_achieved}% of the time this week!"
+        puts "You set your goal to #{@action} for #{@times} times this week, and you actually #{@action} for #{results_times_achieved.length} times. You have achieved #{@perc_times_achieved}%  this week!"
     end
 
         

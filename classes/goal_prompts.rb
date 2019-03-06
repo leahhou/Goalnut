@@ -59,7 +59,7 @@ class GoalPrompts
     # stores input
     #
     def set_times
-        puts "How many " + "times".colorize(@key_text_color) + " a week would you like to go #{@action}" + "[num > 0]".colorize(@key_text_color)
+        puts "How many " + "times".colorize(@key_text_color) + " a week would you like to go #{@action} " + "[num > 0]".colorize(@key_text_color)
         input = gets.chomp
         @vi_ref.is_num_greater?(input, 0) ? @times_of_week = input : set_times
     end 
@@ -70,7 +70,7 @@ class GoalPrompts
     # stores input
     #
     def set_duration
-        puts "How " + "long".colorize(@key_text_color) + " would you like to carry on your #{@action.colorize(@key_text_color)} each?" + "[time in minutes num > 0]".colorize(@key_text_color)
+        puts "How " + "long".colorize(@key_text_color) + " would you like to carry on your #{@action.colorize(@key_text_color)} each time? " + "[time in minutes num > 0]".colorize(@key_text_color)
         input = gets.chomp
         @vi_ref.is_num_greater?(input, 0) ? @duration_of_action = input : set_duration
     end
