@@ -3,7 +3,7 @@ require_relative 'valid_input'
 
 #A Goal class is created to take input of goal_prompts as instance variable
 class Goal
-    attr_reader :goal, :action, :time_frame
+    attr_reader :goal, :action, :time_frame, :perc_duration_achieved, :perc_times_achieved
     
     def initialize()
         @vi_ref = ValidInput.new
@@ -16,7 +16,7 @@ class Goal
         @duration = gp_ref.set_duration
         @reports = []
         @perc_duration_achieved = ""
-        @per_times_achieved = ""
+        @perc_times_achieved = ""
      
     end
 
