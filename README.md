@@ -1,6 +1,6 @@
 # Goalnut (Terminal Application)
 
-![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/logo.png?raw=true)
+https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Ideation%204.jpg
 
 ##### Link to Github repo: <https://github.com/leahhou/Goalnut>
 
@@ -125,7 +125,6 @@ Outputting average and percentage of goal has been implemented.
 # Initial Brainstorming
 Initially, we each wrote two ideas for a terminal application onto a page. After stating our ideas, we went through the potential for each idea and the challenges we would face through their development.
 
-# ideation adddd
 
 # Ideations for app:
 #### IDEA ONE: PET MONITOR APP.
@@ -205,6 +204,8 @@ Throughout the development process communication was cruicial, especially when d
 
 ![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Slack%20Use%201.png?raw=true)
 ![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Slack%20Use%202.png?raw=true)
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Slack%20use%203.png?raw=true)
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/slack%20use%204.png?raw=true)
 
 #### Flowchart
 
