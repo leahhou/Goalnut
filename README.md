@@ -116,6 +116,8 @@ Outputting average and percentage of goal has been implemented.
 ![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Goalnut%2011.png?raw=true)
 ![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Goalnut%2012.png?raw=true)
 ![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Goalnut%2013.png?raw=true)
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Success_final.png?raw=true)
+
 
 
 ## Details of design & planning process
