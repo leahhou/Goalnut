@@ -48,7 +48,7 @@ class Goal
                 results_duration_achieved << item
             end
         end 
-        @perc_duration_achieved = results_duration_achieved.length.to_f/@reports.length) * 100
+        @perc_duration_achieved = (results_duration_achieved.length.to_f/@reports.length) * 100
         puts "You set to #{@action} for #{@duration}mins each time, and  #{@perc_duration_achieved}% of time, you #{@action} for that long this week."
     end
     
@@ -60,7 +60,7 @@ class Goal
                results_times_achieved << item
             end
         end
-        @per_times_achieved = results_times_achieved.length.to_f/@times.to_f) * 100
+        @per_times_achieved = (results_times_achieved.length.to_f/@times.to_f) * 100
         puts "You would like to #{@action} for #{@times} times this week, and you have achieved it #{@per_times_achieved}% of the time this week!"
     end
 
