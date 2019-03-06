@@ -199,12 +199,34 @@ By moving features between testing and developing cards, on trello, we were able
 ![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/User%20Story(Trello).png?raw=true)
 
 
-###Communication
+### Communication
 
 Throughout the development process communication was cruicial, especially when dealing with the editing of linked files and elements. Slack was used to make this process easier and streamline communication.
 
 ![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Slack%20Use%201.png?raw=true)
 ![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Slack%20Use%202.png?raw=true)
+
+#### Commenting
+
+* To keep the code clean and readable we have created blocks of comments above each method relevent to the method and its contents.
+* Examples of commenting:
+
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Commting%20Example%202.png?raw=true)
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Commting%20Example1%20.png?raw=true)
+
+#### Gems:
+* Colorize:
+* * The desire to make the application more visualy appealing led us to choose this gem. 
+* * Link to github page can be found below.
+
+* TTY:
+* * Planned addition: To use and replace all input and menus with iteractive selection
+
+#### Testing examples
+* For testing we have used 'p' statements to print the raw value of variables and input. Example below:
+
+![alt text](https://github.com/leahhou/Goalnut/blob/master/terminal_app_screens/Testing_example1.png?raw=true)
+
 
 ##### Resources
 * colorize github - https://github.com/fazibear/colorize
