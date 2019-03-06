@@ -14,7 +14,6 @@ class GoalPrompts
         @action = ""
         @times_of_week = ""
         @duration_of_action = ""
-        # delete if no error: @report_frequency = ""
         @vi_ref = ValidInput.new
         @key_text_color = :red
     end

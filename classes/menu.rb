@@ -1,28 +1,8 @@
 #require_relative 'goal'
-
+#Class uncalled 
+###--NOTE THIS CLASS IS RESERVED FOR FUTURE CONTENT--#####
 class Menu
-
-    # def main_menu
-    #     options = ["New Goal", "Quit"]
-    #     quit = false
-    #     while !quit
-    #         puts "Welcome to the Goals app. What would you like to do?"
-    #         options.each do |item|
-    #             puts " #{item}"
-    #         end
-    #         input = gets.chomp.downcase
-    #         case input
-    #         when "new goal"
-    #             goal_ref = Goal.new
-    #         when "quit"
-    #             quit = true
-    #         end
-    #     end
-    # end
-## Pass array of Strings, name of menu and an the instance of the caller.
-## For each string print an option for user input.
-## Take the user input and if it matches an element of the passed array
-### then try to call a method with the same name as the string.
+    #early testing to create a dynamic menu method.
     def dyn_menu(arr, name, obj)
         quit = false
         until quit
@@ -38,6 +18,9 @@ class Menu
     end
 end
 
+
+#class to test the dyn_menu method.
+# DELETE or comment out functionality once dyn_menu begins use.
 class Tester 
 
         @name = "Trouble"
