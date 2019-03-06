@@ -13,7 +13,7 @@ class GoalPrompts
         @action = ""
         @times_of_week = ""
         @duration_of_action = ""
-        @report_frequency = ""
+        # delete if no error: @report_frequency = ""
         @vi_ref = ValidInput.new
     end
 
@@ -74,16 +74,16 @@ class GoalPrompts
         @vi_ref.is_num_pos?(input) ? @duration_of_action = input : set_duration
     end
 
-    # create a method called set_report_frequency
+    # delete if no error: create a method called set_report_frequency
     # This will be the number of times the user has to report durring the goal period.
     # Gather input
     # tests input: is numeric and greater than -1
     # stores input
     #
-    def set_report_frequency
-        puts "How often would you like to record your progress per week?"
-        input = gets.chomp 
-        @vi_ref.is_num_pos?(input) ? @report_frequency = input : set_report_frequency
-    end 
+    # def set_report_frequency
+    #     puts "How often would you like to record your progress per week?"
+    #     input = gets.chomp 
+    #     @vi_ref.is_num_pos?(input) ? @report_frequency = input : set_report_frequency
+    # end 
 
 end 

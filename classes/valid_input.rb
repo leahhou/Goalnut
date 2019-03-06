@@ -44,3 +44,4 @@ class ValidInput
         true if Float(input) rescue false
     end
 end
+
