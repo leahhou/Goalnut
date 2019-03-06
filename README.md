@@ -5,7 +5,7 @@ Bryce and Leah's terminal app
 ## Details of design & planning process
 
 # Initial Idea
-Initially, we each wrote two ideas for an terminal application onto a page. After staating our ideas we went through the potential for each idea and the challenges we could face in their development.
+Initially, we each wrote two ideas for a terminal application onto a page. After stating our ideas, we went through the potential for each idea and the challenges we would face through their development.
 
 # IDEAS FOR APP:
 #### IDEA ONE: PET MONITOR APP.
@@ -41,7 +41,7 @@ Initially, we each wrote two ideas for an terminal application onto a page. Afte
 * Return the total dollar amount the user spends per period.
 
 
-# Project Selection:
+# Project Selection: GOAL APP
 
 After brainstorming general ideas, we then gave each idea a ranking of '1 - 4' with '1' being the idea we wished to work on the most.
 The idea with the lowest score would be the project we chose to develop further.
@@ -64,6 +64,13 @@ After deciding to move forward with the goal application we then took the elemen
 * Ascii art for a reward.
 * email reminder for entering goals
 * track multiply goals at a time
+
+# Project plan and timeline.
+
+After assigning each feature to either MVP or Sprinkles, we were able to prioritise features and elements for the devlopment process. This can be seen from the organisational structure of our feature and todo trello boards.
+By moving features between testing and developing cards, on trello, we were able to bring all elements together in an iterative process that allowed for review and adaption through all stages of the project.
+
+* TRELLO PICTURES
 
 
 
